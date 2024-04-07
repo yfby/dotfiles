@@ -56,7 +56,7 @@ sudo pacman -S feh #nitrogen
 sudo pacman -S polkit-gnome #for polkit
 #yay -S autotiling #weird
 
-pacman -S xss-lcok
+pacman -S xss-lock
 yay -S betterlockscreen
 yay -S caffeine-ng
 
@@ -140,22 +140,15 @@ sudo systemctl enable NetworkManager.service
 #i3, bspwm, sway, hyprland, awesomewm, qtile and maybe openbox
 #zsh, zsh extensions
 #custom page for firefox homepage and newtab
-#zsh plugins, terminal tools
 #eww, conky, rofi, neovim
 #polybar better powermenu, add other modules, add other statuses
 #picom exclude programs = rofi, i3, firefox cursor
 #dunst, dunst new notification start at top then go to bottom
 #show updatable packages polybar
-#How to set boot screen logo
-#change system components to xfce or kde or mate, like polkit auth
 #theme and icon and cursor
 #alicritty
 #fix launch startup programs on ~/.config/autostart
-#i3 minimize
 #add suspend, hibernate on polybar
-#i3 shortcut for power controls
-#add to backup
-#change color theme kitty, dunst, rofi
 #update config version
 #default font
 #a way to manage wine or windows programs
