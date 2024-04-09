@@ -133,11 +133,11 @@ sudo pacman -S network-manager-applet
 sudo systemctl enable NetworkManager.service
 
 
-
+#development enviroment
+sudo pacman -S git
 
 #python development
 sudo pacman -S python-pip
-pip install pipenv --user
 
 
 #i3, bspwm, sway, hyprland, awesomewm, qtile and maybe openbox

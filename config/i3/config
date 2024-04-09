@@ -189,8 +189,8 @@ bindsym $mod+Shift+e mode "$mode_system"
 #i3 gaps config
 gaps inner 2
 gaps outer 4
-smart_gaps on
-smart_borders on
+# smart_gaps on
+# smart_borders on
 for_window [class=".*"] border pixel 0
 
 #Keybinds
@@ -201,11 +201,11 @@ bindsym $mod+shift+x exec betterlockscreen -l
 
 #Window Color
 # class                 border      backgr.     text        indicator       child_border
-client.focused          #f4f4f4     #94b0c2     #566c86     #566c86         #f4f4f4
-client.focused_inactive #566c86     #ffcd75     #566c86     #a7f070         #566c86
-client.unfocused        #566c86     #ffcd75     #566c86     #a7f070         #566c86
-client.urgent           #f4f4f4     #94b0c2     #f4f4f4     #94b0c2         #566c86
-client.placeholder      #f4f4f4     #a7f070     #f4f4f4     #a7f070         #566c86
+client.focused          #94b0c2     #94b0c2     #ffcd75     #566c86         #f4f4f4
+client.focused_inactive #333c57     #ffcd75     #566c86     #a7f070         #566c86
+client.unfocused        #333c57     #566c86     #1a1c2c     #a7f070         #566c86
+client.urgent           #333c57     #566c86     #f4f4f4     #566c86         #566c86
+client.placeholder      #333c57     #a7f070     #f4f4f4     #a7f070         #566c86
 
 client.background       #566c86
 
