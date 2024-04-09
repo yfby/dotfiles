@@ -135,6 +135,9 @@ sudo systemctl enable NetworkManager.service
 
 
 
+#python development
+sudo pacman -S python-pip
+pip install pipenv --user
 
 
 #i3, bspwm, sway, hyprland, awesomewm, qtile and maybe openbox
