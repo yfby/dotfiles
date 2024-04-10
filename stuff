@@ -17,7 +17,7 @@ compression-algorithm = zstd' | sudo tee /etc/systemd/zram-generator.conf
 sudo systemctl daemon-reload
 sudo systemctl start /dev/zram0
 
-
+sudo pacman -S earlyoom
 
 #install yay
 sudo pacman -S git base-devel
@@ -133,8 +133,20 @@ sudo pacman -S network-manager-applet
 sudo systemctl enable NetworkManager.service
 
 
+<<<<<<< HEAD
 sudo pacman -S python-pipenv
+=======
+#development enviroment
+sudo pacman -S git
 
+git config --global
+user.email=harveykyleybanez@gmail.com
+user.name=yfby
+core.editor=nvim
+>>>>>>> 7fd9fda004a2bbe69b225376d36705511b320c57
+
+#python development
+sudo pacman -S python-pip
 
 
 #i3, bspwm, sway, hyprland, awesomewm, qtile and maybe openbox
