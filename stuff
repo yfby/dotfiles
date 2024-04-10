@@ -17,7 +17,7 @@ compression-algorithm = zstd' | sudo tee /etc/systemd/zram-generator.conf
 sudo systemctl daemon-reload
 sudo systemctl start /dev/zram0
 
-
+sudo pacman -S earlyoom
 
 #install yay
 sudo pacman -S git base-devel
@@ -135,6 +135,11 @@ sudo systemctl enable NetworkManager.service
 
 #development enviroment
 sudo pacman -S git
+
+git config --global
+user.email=harveykyleybanez@gmail.com
+user.name=yfby
+core.editor=nvim
 
 #python development
 sudo pacman -S python-pip
