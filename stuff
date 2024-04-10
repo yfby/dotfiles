@@ -153,3 +153,4 @@ sudo pacman -S python-pipenv
 #default font
 #a way to manage wine or windows programs
 #docker & git & virtual machines
+#samba configuration
