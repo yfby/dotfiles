@@ -133,9 +133,6 @@ sudo pacman -S network-manager-applet
 sudo systemctl enable NetworkManager.service
 
 
-<<<<<<< HEAD
-sudo pacman -S python-pipenv
-=======
 #development enviroment
 sudo pacman -S git
 
@@ -143,11 +140,10 @@ git config --global
 user.email=harveykyleybanez@gmail.com
 user.name=yfby
 core.editor=nvim
->>>>>>> 7fd9fda004a2bbe69b225376d36705511b320c57
 
 #python development
 sudo pacman -S python-pip
-
+sudo pacman -S python-pipenv
 
 #i3, bspwm, sway, hyprland, awesomewm, qtile and maybe openbox
 #zsh, zsh extensions
