@@ -1,3 +1,2 @@
-
-#ignore neovim stuff
+# ignore useless neovim stuff
 config/nvim/lazy-lock.json
