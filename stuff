@@ -7,7 +7,22 @@
 cp -r ~/dotfiles/configfiles/home/* ~/
 cp -r ~/dotfiles/configfiles/config/* ~/.config/
 
+# sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g) //server-address/folder /mount/path/on/ubuntu
+UUID=057B861253F4E902   /media/data     ntfs    defaults        0       0
+//192.168.1.23/shared /media/network-storage cifs _netdev,nofail,username=user,password=password,uid=1000,gid=1000 0 0
 
+sudo apt install samba samba-common-bin
+
+sudo nano /etc/samba/smb.conf
+[shared]
+path=/mnt/sda1/shared
+writeable=Yes
+create mask=0777
+directory mask=0777
+public=no
+
+sudo adduser pi-nas-user
+sudo smbpasswd -a username
 
 #install zram if needed
 sudo pacman -S zram-generator --noconfirm --needed
