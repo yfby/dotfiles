@@ -156,6 +156,10 @@ user.email=harveykyleybanez@gmail.com
 user.name=yfby
 core.editor=nvim
 
+
+sudo pacman -S docker
+sudo systemctl docker.service
+
 #python development
 sudo pacman -S python-pip
 sudo pacman -S python-pipenv

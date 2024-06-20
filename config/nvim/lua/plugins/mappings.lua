@@ -11,8 +11,7 @@ keymap('n', '<leader>dq', vim.diagnostic.open_float, { desc = 'Open floating dia
 keymap('n', '<leader>dw', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- File Explorer keymaps
-keymap('n', '<leader>fx', require('nvim-tree.api').tree.close, { desc = 'Toggle File Explorer' })
-keymap('n', '<leader>ff', require('nvim-tree.api').tree.open, { desc = 'Open File Explorer' })
+keymap('n', '<leader>f', require('nvim-tree.api').tree.open, { desc = 'File Explorer' })
 -- keymap('n', '<leader>f', require('nvim-tree.api').tree.open, { desc = 'File Explorer' })
 
 -- Terminal keymaps
@@ -65,7 +64,6 @@ require('which-key').register {
   ['<leader>c'] = { name = 'Manage Buffers', _ = 'which_key_ignore' },
   ['<leader>t'] = { name = 'Telescope', _ = 'which_key_ignore' },
   ['<leader>d'] = { name = 'Diagnostic', _ = 'which_key_ignore' },
-  ['<leader>f'] = { name = 'File Explorer', _ = 'which_key_ignore' },
   ['<leader>u'] = { name = 'Real Stupid Stuff', _ = 'which_key_ignore' },
   ['<leader>l'] = { name = 'LSP', _ = 'which_key_ignore' },
 }
