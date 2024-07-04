@@ -14,12 +14,6 @@ require('dashboard').setup {
     },
     shortcut = {
       {
-        desc = '󰅨 LeetCode',
-        group = 'Label',
-        action = 'Leet',
-        key = 'l',
-      },
-      {
         desc = ' Keymaps',
         group = 'DiagnosticHint',
         action = 'WhichKey',

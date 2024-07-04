@@ -23,12 +23,11 @@ end
 lazy.setup({
   -- Theme
   {
-    'folke/tokyonight.nvim',
-    -- 'rebelot/kanagawa.nvim',
+    "folke/tokyonight.nvim",
+    lazy = false,
     priority = 1000,
     config = function()
       vim.cmd.colorscheme 'tokyonight-night'
-      -- vim.cmd.colorscheme 'kanagawa'
     end,
   },
 
@@ -183,25 +182,6 @@ lazy.setup({
       require("plugins.config.dashboard-nvim")
     end,
     dependencies = {{'nvim-tree/nvim-web-devicons'}}
-  },
-
-  -- LeetCode integration
-  {
-    "kawre/leetcode.nvim",
-    build = ":TSUpdate html",
-    dependencies = {
-        "nvim-telescope/telescope.nvim",
-        "nvim-lua/plenary.nvim",
-        "MunifTanjim/nui.nvim",
-
-        -- optional
-        "nvim-treesitter/nvim-treesitter",
-        "rcarriga/nvim-notify",
-        "nvim-tree/nvim-web-devicons",
-    },
-    opts = {
-      lang = "python",
-    },
   },
 })
 
