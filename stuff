@@ -7,22 +7,7 @@
 cp -r ~/dotfiles/configfiles/home/* ~/
 cp -r ~/dotfiles/configfiles/config/* ~/.config/
 
-# sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g) //server-address/folder /mount/path/on/ubuntu
-UUID=057B861253F4E902   /media/data     ntfs    defaults        0       0
-//192.168.1.23/shared /media/network-storage cifs _netdev,nofail,username=user,password=password,uid=1000,gid=1000 0 0
 
-sudo apt install samba samba-common-bin
-
-sudo nano /etc/samba/smb.conf
-[shared]
-path=/mnt/sda1/shared
-writeable=Yes
-create mask=0777
-directory mask=0777
-public=no
-
-sudo adduser pi-nas-user
-sudo smbpasswd -a username
 
 #install zram if needed
 sudo pacman -S zram-generator --noconfirm --needed
@@ -34,14 +19,20 @@ sudo systemctl start /dev/zram0
 
 sudo pacman -S earlyoom
 
+
+
 #install yay
 sudo pacman -S git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
+
+
 #install flatpak for more software
 sudo pacman -S flakpak
+
+
 
 #set up grub theme
 cd ~
@@ -49,10 +40,14 @@ sudo git clone https://github.com/semimqmo/sekiro_grub_theme
 cd sekiro_grub_theme
 sh install.sh
 
+
+
 #set up lightdm as display manager
 sudo pacman -S lightdm lightdm-webkit2-greeter
 yay -S lightdm-webkit-theme-aether
 sudo systemctl enable lightdm.service
+
+
 
 #setup shell
 sudo pacman -S zsh
@@ -60,12 +55,16 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 sed -i 's/ZSH_THEME=.*/ZSH_THEME="powerlevel10k\/powerlevel10k"/' ~/.zshrc
 
-
 #install required fonts
 sudo pacman -S ttf-hack ttf-fira-code ttf-dejavu
 sudo pacman -S ttf-hack-nerd ttf-firacode-nerd ttf-dejavu-nerd
 
-#install setup
+
+#HYPR
+sudo pacman -S hyprland
+yay -S rofi-lbonn-wayland-git
+
+#I3 install setup
 sudo pacman -S i3-wm picom rofi polybar dunst
 sudo pacman -S feh #nitrogen
 sudo pacman -S polkit-gnome #for polkit
@@ -87,7 +86,7 @@ sudo pacman -S pavucontrol #more pulseaudio control
 
 #code editor
 sudo pacman -S neovim
-sudo pacman -S xclip #for clipboard
+sudo pacman -S xclip  wl-clipboard #for clipboard
 sudo pacman -S ripgrep # for telescope
 sudo pacman -S npm #for plugins
 
@@ -164,7 +163,7 @@ sudo systemctl docker.service
 sudo pacman -S python-pip
 sudo pacman -S python-pipenv
 
-#i3, bspwm, sway, hyprland, awesomewm, qtile and maybe openbox
+#i3, sway, hyprland, awesomewm
 #zsh, zsh extensions
 #custom page for firefox homepage and newtab
 #eww, conky, rofi, neovim
@@ -181,3 +180,24 @@ sudo pacman -S python-pipenv
 #a way to manage wine or windows programs
 #docker & git & virtual machines
 #samba configuration
+
+
+
+
+
+# # sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g) //server-address/folder /mount/path/on/ubuntu
+# UUID=057B861253F4E902   /media/data     ntfs    defaults        0       0
+# //192.168.1.23/shared /media/network-storage cifs _netdev,nofail,username=user,password=password,uid=1000,gid=1000 0 0
+#
+# sudo apt install samba samba-common-bin
+#
+# sudo nano /etc/samba/smb.conf
+# [shared]
+# path=/mnt/sda1/shared
+# writeable=Yes
+# create mask=0777
+# directory mask=0777
+# public=no
+#
+# sudo adduser pi-nas-user
+# sudo smbpasswd -a username
