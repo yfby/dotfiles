@@ -70,7 +70,7 @@ sudo pacman -S feh #nitrogen
 sudo pacman -S polkit-gnome #for polkit
 #yay -S autotiling #weird
 
-pacman -S xss-lock
+sudo pacman -S xss-lock
 yay -S betterlockscreen
 yay -S caffeine-ng
 
@@ -89,6 +89,8 @@ sudo pacman -S neovim
 sudo pacman -S xclip  wl-clipboard #for clipboard
 sudo pacman -S ripgrep # for telescope
 sudo pacman -S npm #for plugins
+sudo pacman -S nodejs
+
 
 #internet
 sudo pacman -S firefox #browser
@@ -150,14 +152,9 @@ sudo systemctl enable NetworkManager.service
 #development enviroment
 sudo pacman -S git
 
-git config --global
-user.email=harveykyleybanez@gmail.com
-user.name=yfby
-core.editor=nvim
-
-
-sudo pacman -S docker
-sudo systemctl docker.service
+git config --global user.email "harveykyleybanez@gmail.com"
+git config --global user.name "yfby"
+git config --global core.editor "nvim"
 
 #python development
 sudo pacman -S python-pip
