@@ -35,13 +35,16 @@ local harpoon = require("harpoon")
 
 harpoon:setup({})
 
-keymap("n", "<leader>a", function() harpoon:list():append() end, { desc = 'Append Buffer' })
-keymap("n", "<leader>cd", function() harpoon:list():remove() end, { desc = 'Remove Buffer' })
+keymap("n", "<leader>ca", function() harpoon:list():add() end, { desc = 'Add to Buffer' })
+keymap("n", "<leader>cr", function() harpoon:list():remove() end, { desc = 'Remove Buffer' })
+
 keymap("n", "<leader>ce", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, { desc = 'Toggle list' })
-keymap("n", "<leader>1", function() harpoon:list():select(1) end, { desc = 'Buffer 1' })
-keymap("n", "<leader>2", function() harpoon:list():select(2) end, { desc = 'Buffer 2' })
-keymap("n", "<leader>3", function() harpoon:list():select(3) end, { desc = 'Buffer 3' })
-keymap("n", "<leader>4", function() harpoon:list():select(4) end, { desc = 'Buffer 4' })
+
+keymap("n", "<leader>c1", function() harpoon:list():select(1) end, { desc = 'Buffer 1' })
+keymap("n", "<leader>c2", function() harpoon:list():select(2) end, { desc = 'Buffer 2' })
+keymap("n", "<leader>c3", function() harpoon:list():select(3) end, { desc = 'Buffer 3' })
+keymap("n", "<leader>c4", function() harpoon:list():select(4) end, { desc = 'Buffer 4' })
+
 keymap("n", "<leader>cq", function() harpoon:list():prev() end, { desc = 'Previous Buffer' })
 keymap("n", "<leader>cw", function() harpoon:list():next() end, { desc = 'Next Buffer' })
 

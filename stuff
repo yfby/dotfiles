@@ -160,6 +160,11 @@ git config --global core.editor "nvim"
 sudo pacman -S python-pip
 sudo pacman -S python-pipenv
 
+
+
+
+
+
 #i3, sway, hyprland, awesomewm
 #zsh, zsh extensions
 #custom page for firefox homepage and newtab

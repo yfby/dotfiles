@@ -1,0 +1,95 @@
+git, docker, llama.cpp, jupyter notebook
+learn machine learning = complete snake AI
+learn DJANGO, HTML, JS/TS = make a simple website for server to manage it
+make progress on game Make a 2d game in godot
+art drawing also pixel art and blender
+modding(terraria, minecraft)
+learn how make an android app and build one
+using bluetooth on rpi (learn how to use bluetooth on code)
+learn how to use microcontrollers learn electronics
+godot and blender
+make random programming projects
+rust/C++/lua game
+learn data types & data bases & data stuctures
+learn algorithms
+learn math, physics, chemistry, engineering
+game engine from scratch
+Big O
+Data Structures
+read pep8
+MERN techstack
+finish rice
+change font for coding
+make plugin for stremio downloading
+
+
+
+music production
+video editing and sfx
+3d modeling
+drawing or art
+3D/vfx/blender/or other & 2D/learn
+game dev
+
+
+
+differences between vpn and proxy and dns server
+Program documentation
+Async/await
+pillars of oop
+coefficient math meaning?
+Artificial meaning
+setup vurnerable vm to exploit and hack
+how to fix broken dependencies arch linux
+watch mr robot
+seg fault
+radi detector gas
+hydrogen fuels cells
+Inequality symbols
+division of polynomials
+rational equation
+
+
+
+Language for Programming:
+JavaScript/TypeScript
+HTML/CSS
+PHP
+SQL and other database language
+Java/C#
+C++/C
+Assembly x86_64, Arm64
+Rust
+Lua
+Ruby
+Go
+Bash
+Perl
+
+Machine Learning & Artificial Intellegence
+Cryptography
+General Programming
+Game Engine
+OS Development
+Cyber security
+Full stack
+
+
+
+General programming
+Game development
+OS development
+Bug bounty
+Competetive programming
+CTF
+Game Modding
+
+
+
+physics
+electronics
+mechanical
+robotics
+Financial literacy
+linguistics / learn other languages
+

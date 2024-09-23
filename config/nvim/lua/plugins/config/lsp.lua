@@ -5,6 +5,15 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+  pyright = {
+    python = {
+      analysis = {
+        autoSearchPaths = true,
+        diagnosticMode = "openFilesOnly",
+        useLibraryCodeForTypes = true
+      },
+    },
+  },
 }
 
 --Mason setup
@@ -93,11 +102,14 @@ cmp.setup {
     completeopt = 'menu,menuone,noinsert',
   },
   mapping = cmp.mapping.preset.insert {
-    ['<C-n>'] = cmp.mapping.select_next_item(),
-    ['<C-p>'] = cmp.mapping.select_prev_item(),
-    ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-f>'] = cmp.mapping.scroll_docs(4),
-    ['<C-Space>'] = cmp.mapping.complete {},
+    ['<S-Up>'] = cmp.mapping.scroll_docs(-4),
+    ['<S-Down>'] = cmp.mapping.scroll_docs(4),
+    ['<S-e>'] = cmp.mapping.abort(),
+    ['<S-w>'] = cmp.mapping.select_next_item(),
+    ['<S-q>'] = cmp.mapping.select_prev_item(),
+    ['<S-a>'] = cmp.mapping.scroll_docs(-4),
+    ['<S-s>'] = cmp.mapping.scroll_docs(4),
+    ['<S-Space>'] = cmp.mapping.complete {},
     ['<CR>'] = cmp.mapping.confirm {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
