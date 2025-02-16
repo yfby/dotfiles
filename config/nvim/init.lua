@@ -1,3 +1,4 @@
+--github copilot
 --friendly snippets fix
 --dubugger nvim-dap plugin
 --language autoformatiing
